@@ -1,0 +1,213 @@
+@import "./functions";
+@import "./mixins";
+@import "./typography";
+@import "./grid";
+@import "./custom/border-radius.scss";
+@import "./custom/margin.scss";
+@import "./custom/padding.scss";
+@import "./ant_override";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  min-height: 100vh;
+}
+
+.cs-color-primary {
+  color: #12b24e !important;
+}
+
+.cs-hrz-center {
+  justify-content: center;
+}
+
+.cs-no-gap {
+  gap: 0px !important;
+}
+
+.cs-color-primary-1 {
+  color: #2e1e5b !important;
+}
+
+.cs-bg-fff {
+  background-color: #fff;
+}
+
+.cs-clr-fff {
+  color: #FFF !important;
+}
+
+.cs-clr-000 {
+  color: #000 !important;
+}
+
+.cs-clr-off-000 {
+  color: #9999 !important;
+}
+
+.cs-clr-off-white {
+  color: #ffffff7a !important;
+}
+
+.cs-color-secondary {
+  color: #38b65a !important;
+}
+
+// $width-value: 30, 40, 50, 60, 70, 80, 90, 100;
+
+// @each $value in $width-value {
+// 	.cs-w-#{$value} {
+// 		width: #{$value}"%" !important;
+// 	}
+// }
+
+.cs-clr-black {
+  color: #000 !important;
+}
+
+.cs-w-100 {
+  width: 100%;
+}
+
+.cs-w-60 {
+  width: 60%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--PrimaryFont);
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.cs-cursor-pointer {
+  cursor: pointer;
+}
+
+.cs-jc-end {
+  justify-content: end !important;
+}
+
+.cs-ac-end {
+  align-content: flex-end !important;
+  align-items: flex-end !important
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-hint {
+  color: map-get($map: $grey, $key: 12);
+}
+
+.cs-jc-sb {
+  justify-content: space-between !important;
+}
+
+.cs-ai-end {
+  align-items: flex-end;
+}
+
+$rules: (
+  (m, margin),
+  (ml, margin-left),
+  (mt, margin-top),
+  (mb, margin-bottom),
+  (mr, margin-right),
+  (p, padding),
+  (pl, padding-left),
+  (pt, padding-top),
+  (pr, padding-right),
+  (pb, padding-bottom)
+);
+
+@each $item in $rules {
+  @include generate(nth($item, 1), nth($item, 2));
+}
+
+/// @todo do the fix in the library
+.nitrozen-checkbox-container {
+  justify-content: start !important;
+  flex-direction: row-reverse;
+
+  .nitrozen-checkbox {
+    position: relative;
+  }
+}
+
+/// @todo add in the library
+.nitrozen-input-prefix {
+  font-size: pxToRem(14);
+}
+
+.nitrozen-tooltip .nitrozen-tooltipcontent {
+  max-width: pxToRem(300);
+}
+
+.blur-background {
+  -webkit-filter: brightness(40%);
+  -moz-filter: brightness(40%);
+  -o-filter: brightness(40%);
+  -ms-filter: brightness(40%);
+  filter: brightness(40%);
+}
+
+.cs-vh-100 {
+  height: 100vh;
+}
+
+.bread-crumbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.active-inactive-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.position-rel {
+  position: relative;
+}
+
+.cs-dis-flex {
+  display: flex;
+}
+
+.cs-pointer {
+  cursor: pointer;
+}
+
+.cs-center {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.cs-vt-center {
+  align-items: center;
+  align-content: center;
+}
+
+.cs-vh-100 {
+  height: 100vh;
+}
+
+.cs-pos-rel {
+  position: relative;
+}
