@@ -14,6 +14,16 @@
   background-color: #fff !important;
 }
 
+.cs_mob_nav_nested_header :global(.ant-collapse-header) {
+  padding-top: 0px !important;
+  display: flex;
+  align-items: center !important;
+}
+.cs_mob_nav_nested_header :global(.ant-collapse-item) {
+  padding-top: 0px !important;
+  background-color: #fff !important;
+}
+
 .cs_logo_container_mob {
   height: 60px;
 }
@@ -53,4 +63,13 @@
   justify-content: center !important;
   padding: 8px !important;
   margin: 0px !important;
+}
+
+.dropdown {
+  line-height: 1;
+  margin: 5px 0 5px 5px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  display: flex;
+  align-items: center;
 }

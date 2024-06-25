@@ -3,17 +3,64 @@ import type { CollapseProps } from "antd";
 import { Collapse, Typography } from "antd";
 import Logo from "../../../static/images/logo/MOC_L2.jpg";
 import CSS from "./nav-bar-mobile.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import classNames from "classnames";
 
 const NavBarMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [currentActive, setCurrentActive] = useState("Home");
   const [activeItemArr, setActiveItemArr] = useState<string | string[]>([]);
+  const [isCourseExpand, setIsCourseExpand] = useState<boolean>(false);
 
   const handleActiveMenu = (active: string) => {
     setCurrentActive(active);
     setShowMenu(!showMenu);
     setActiveItemArr([]);
   };
+
+  const getCoursesList = () => {
+    return (
+      <div>
+        <div className={CSS.cs_top_menu}>
+          <Typography.Title
+            onClick={() => handleActiveMenu("Medical")}
+            className={`${CSS.cs_nav_bar_title_container} ${
+              currentActive === "Medical" ? CSS.cs_menu_active_bg : ""
+            }`}
+            level={5}
+          >
+            Medical
+          </Typography.Title>
+        </div>
+      </div>
+    );
+  };
+
+  const itemsNest: CollapseProps["items"] = [
+    {
+      key: "1",
+      label: (
+        <Typography.Title
+          onClick={() => setIsCourseExpand(!isCourseExpand)}
+          className={`${CSS.cs_nav_bar_title_container} ${
+            currentActive === "Courses" ? CSS.cs_menu_active_bg : ""
+          }`}
+          level={5}
+        >
+          <div className="cs-dis-flex">
+            <div>Courses</div>
+            <div className={classNames(CSS.dropdown)}>
+              <FontAwesomeIcon
+                icon={isCourseExpand ? faAngleUp : faAngleDown}
+              />
+            </div>
+          </div>
+        </Typography.Title>
+      ),
+      children: getCoursesList(),
+    },
+  ];
 
   const getMenuItem = () => {
     return (
@@ -43,15 +90,12 @@ const NavBarMobile = () => {
         </div>
 
         <div className={CSS.cs_top_menu}>
-          <Typography.Title
-            onClick={() => handleActiveMenu("Courses")}
-            className={`${CSS.cs_nav_bar_title_container} ${
-              currentActive === "Courses" ? CSS.cs_menu_active_bg : ""
-            }`}
-            level={5}
-          >
-            Courses
-          </Typography.Title>
+          <Collapse
+            ghost
+            expandIcon={() => null}
+            items={itemsNest}
+            className={CSS.cs_mob_nav_nested_header}
+          />
         </div>
 
         <div className={CSS.cs_top_menu}>
