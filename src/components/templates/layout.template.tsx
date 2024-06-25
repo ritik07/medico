@@ -1,27 +1,30 @@
 import React from "react";
-import { ConfigProvider } from "antd";
+import { Affix } from "antd";
 import NavBarMobile from "../nav-bar/nav-bar-mobile";
-// import CSS from "./layout.template.module.scss";
+import { Outlet } from "react-router-dom";
+import withConfigProvider from "./hoc/with-config-provider-nav-mob";
+import { configNavMob } from "./constants/config";
+import CSS from "./layout.template.module.scss";
+import NavBarDesktop from "../nav-bar/nav-bar-desktop";
+
+const NavBarMobileWithConfig = withConfigProvider(NavBarMobile, configNavMob);
 
 const LayoutTemplate = () => {
   return (
     <div>
-      <ConfigProvider
-        theme={{
-          components: {
-            Collapse: {
-              contentPadding: 0,
-              // contentBg: "#06BBCC !important",
-            },
-          },
-          token: {
-            // colorText: "#fff !important",
-            fontSize: 18,
-          },
-        }}
-      >
-        <NavBarMobile />
-      </ConfigProvider>
+      <div className={`${CSS.mobileView} ${CSS.cs_sticky_nav}`}>
+        <NavBarMobileWithConfig />
+      </div>
+
+      <div className={CSS.desktopView}>
+        <NavBarDesktop />
+      </div>
+
+      <div>
+        <div style={{ background: "#06bbcc63", height: "800px" }}>WIP</div>
+
+        <Outlet />
+      </div>
     </div>
   );
 };

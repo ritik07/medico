@@ -1,47 +1,50 @@
 @import "/src/styles/functions";
+@import "/src/styles/colors";
 
 .cs_logo_mob {
   height: 100%;
   width: auto;
 }
 
+.cs_mob_nav_header :global(.ant-collapse-header) {
+  display: flex;
+  align-items: center !important;
+}
+.cs_mob_nav_header :global(.ant-collapse-item) {
+  background-color: #fff !important;
+}
+
 .cs_logo_container_mob {
-  height: 40px;
+  height: 60px;
 }
 
 .burger_icon {
   fill: #16163f;
   width: 1.5em;
   height: 1.5em;
-}
 
-.burger_icon:focus {
-  fill: #06BBCC;
-  width: 1.5em;
-  height: 1.5em;
-}
-
-.burger_icon:hover {
-  fill: #06BBCC;
-  width: 1.5em;
-  height: 1.5em;
+  &:focus,
+  &:hover {
+    fill: $primaryColor;
+  }
 }
 
 .ant-collapse-header:focus {
   background-color: transparent;
 }
 
+// Uncomment if needed
 // .cs_bottom_menu {
 //   border: solid #EAEAEA 1px;
 //   padding: 5px;
 // }
 
-.cs_top_menu{
-  border-top: solid #EAEAEA 1px;
+.cs_top_menu {
+  border-top: solid #eaeaea 1px;
 }
 
-.cs_menu_active_bg{
-  background: #06BBCC;
+.cs_menu_active_bg {
+  background: $primaryColor !important;
   color: #fff !important;
 }
 
@@ -49,4 +52,5 @@
   display: flex !important;
   justify-content: center !important;
   padding: 8px !important;
+  margin: 0px !important;
 }

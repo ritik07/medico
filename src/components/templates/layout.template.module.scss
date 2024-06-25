@@ -1,2 +1,25 @@
 @import "/src/styles/functions";
 
+.cs_sticky_nav {
+  position: sticky;
+  top: 0;
+}
+
+/* layout.template.module.scss */
+.mobileView {
+  display: none;
+}
+
+.desktopView {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobileView {
+    display: block;
+  }
+
+  .desktopView {
+    display: none;
+  }
+}

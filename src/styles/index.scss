@@ -5,7 +5,6 @@
 @import "./custom/border-radius.scss";
 @import "./custom/margin.scss";
 @import "./custom/padding.scss";
-@import "./ant_override";
 
 html,
 body {
@@ -15,8 +14,16 @@ body {
   min-height: 100vh;
 }
 
-.cs-color-primary {
-  color: #12b24e !important;
+.cs-txt-word-break{
+  word-break: break-all;
+}
+
+.cs-font-white{
+  color: #fff !important;
+}
+
+.cs-fs-16{
+  font-size: 16px;
 }
 
 .cs-hrz-center {
@@ -36,7 +43,7 @@ body {
 }
 
 .cs-clr-fff {
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 .cs-clr-000 {
@@ -94,7 +101,7 @@ body {
 
 .cs-ac-end {
   align-content: flex-end !important;
-  align-items: flex-end !important
+  align-items: flex-end !important;
 }
 
 .flex {
@@ -193,6 +200,7 @@ $rules: (
 }
 
 .cs-center {
+  display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;

@@ -1,6 +1,6 @@
 import Router from "./routes/routes";
 import { ConfigProvider } from "antd";
-import "./styles/_ant_override.scss";
+import "./styles/index.scss";
 
 function App() {
   return (

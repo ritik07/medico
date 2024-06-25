@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import type { CollapseProps } from "antd";
 import { Collapse, Typography } from "antd";
-import Logo from "../../../static/images/logo/logo-medico.png";
+import Logo from "../../../static/images/logo/MOC_L2.jpg";
 import CSS from "./nav-bar-mobile.module.scss";
 
 const NavBarMobile = () => {
@@ -99,16 +99,18 @@ const NavBarMobile = () => {
       expandIconPosition="end"
       expandIcon={() =>
         !showMenu ? (
-          <svg
-            onClick={() => handleBurgerIcon(true)}
-            aria-hidden="true"
-            role="presentation"
-            className={CSS.burger_icon}
-            viewBox="0 0 1000 1000"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path>
-          </svg>
+          <div>
+            <svg
+              onClick={() => handleBurgerIcon(true)}
+              aria-hidden="true"
+              role="presentation"
+              className={CSS.burger_icon}
+              viewBox="0 0 1000 1000"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path>
+            </svg>
+          </div>
         ) : (
           <svg
             onClick={() => handleBurgerIcon(false)}
@@ -122,6 +124,7 @@ const NavBarMobile = () => {
           </svg>
         )
       }
+      className={CSS.cs_mob_nav_header}
       onChange={(e: string | string[]) => {
         setActiveItemArr(e);
       }}

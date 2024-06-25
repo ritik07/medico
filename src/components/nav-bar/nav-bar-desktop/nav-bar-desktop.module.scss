@@ -1,0 +1,52 @@
+@import "/src/styles/colors";
+
+.cs_nav_info_bar_container {
+  background: $primaryColor;
+}
+
+.cs_nav_bar_container {
+  background: #fff;
+}
+
+.cs_navbar_logo {
+  max-height: 100%;
+  width: fit-content;
+}
+
+.cs_navbar_logo_container {
+  max-height: 50px;
+  height: 50px;
+}
+
+.cs_nav_title {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 15px 0px 15px 0px !important;
+  font-weight: 600;
+}
+
+.dropdown {
+  line-height: 1;
+  margin: 10px 0 10px 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+}
+
+.cs_navbar_menu_title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cs_navbar_menu_container :global(.ant-dropdown-menu-item) {
+  padding: 10px 25px !important;
+  &:hover {
+    color: $whiteColor !important;
+    background-color: $primaryColor !important;
+  }
+}
+
+.cs_navbar_root :global(.ant-dropdown-menu) {
+  margin-top: 26px;
+}

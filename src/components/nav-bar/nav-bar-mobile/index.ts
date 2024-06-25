@@ -1,3 +1,3 @@
-import LayoutContainer from "./nav-bar-mobile";
+import NavBarMob from "./nav-bar-mobile";
 
-export default LayoutContainer;
+export default NavBarMob;
