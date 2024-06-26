@@ -1,6 +1,8 @@
 import Router from "./routes/routes";
 import { ConfigProvider } from "antd";
 import "./styles/index.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

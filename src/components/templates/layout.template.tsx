@@ -20,11 +20,7 @@ const LayoutTemplate = () => {
         <NavBarDesktop />
       </div>
 
-      <div>
-        <div style={{ background: "#06bbcc63", height: "800px" }}>WIP</div>
-
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 };

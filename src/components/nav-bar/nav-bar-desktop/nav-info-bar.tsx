@@ -26,8 +26,10 @@ const NavInfoBar: React.FC = () => {
   return (
     <div>
       <Row
-        className={classNames("cs-p-12", CSS.cs_nav_info_bar_container)}
-        gutter={[20, 20]}
+        className={classNames(
+          "cs-tp-12 cs-bp-12",
+          CSS.cs_nav_info_bar_container
+        )}
       >
         <Col xl={4} lg={3} md={2}></Col>
 

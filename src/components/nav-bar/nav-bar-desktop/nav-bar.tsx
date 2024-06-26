@@ -67,8 +67,7 @@ const NavBar = () => {
   return (
     <div>
       <Row
-        className={classNames("cs-p-10", CSS.cs_nav_bar_container)}
-        gutter={[20, 20]}
+        className={classNames("cs-tp-10 cs-bp-10", CSS.cs_nav_bar_container)}
       >
         <Col xl={4} lg={3} md={2}></Col>
         <Col xl={3} lg={3} md={3}>
@@ -86,8 +85,10 @@ const NavBar = () => {
                 <div className={classNames("cs-rm-13", CSS.cs_nav_title)}>
                   <span className={classNames("cs-pointer")}>Home</span>
                 </div>
-             
-                <div className={classNames("cs-rm-13 cs-lm-13", CSS.cs_nav_title)}>
+
+                <div
+                  className={classNames("cs-rm-13 cs-lm-13", CSS.cs_nav_title)}
+                >
                   <span className={classNames("cs-pointer")}>About</span>
                 </div>
 
