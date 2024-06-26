@@ -12,6 +12,7 @@ const NavBarMobile = () => {
   const [currentActive, setCurrentActive] = useState("Home");
   const [activeItemArr, setActiveItemArr] = useState<string | string[]>([]);
   const [isCourseExpand, setIsCourseExpand] = useState<boolean>(false);
+  const [isCountryExpanded, setIsCountryExpanded] = useState<boolean>(false);
 
   const handleActiveMenu = (active: string) => {
     setCurrentActive(active);
@@ -31,6 +32,24 @@ const NavBarMobile = () => {
             level={5}
           >
             Medical
+          </Typography.Title>
+        </div>
+      </div>
+    );
+  };
+
+  const getCountryList = () => {
+    return (
+      <div>
+        <div className={CSS.cs_top_menu}>
+          <Typography.Title
+            onClick={() => handleActiveMenu("Russia")}
+            className={`${CSS.cs_nav_bar_title_container} ${
+              currentActive === "Russia" ? CSS.cs_menu_active_bg : ""
+            }`}
+            level={5}
+          >
+            Russia
           </Typography.Title>
         </div>
       </div>
@@ -59,6 +78,31 @@ const NavBarMobile = () => {
         </Typography.Title>
       ),
       children: getCoursesList(),
+    },
+  ];
+
+  const itemsNestCountry: CollapseProps["items"] = [
+    {
+      key: "1",
+      label: (
+        <Typography.Title
+          onClick={() => setIsCountryExpanded(!isCountryExpanded)}
+          className={`${CSS.cs_nav_bar_title_container} ${
+            currentActive === "Courses" ? CSS.cs_menu_active_bg : ""
+          }`}
+          level={5}
+        >
+          <div className="cs-dis-flex">
+            <div>Countries</div>
+            <div className={classNames(CSS.dropdown)}>
+              <FontAwesomeIcon
+                icon={isCountryExpanded ? faAngleUp : faAngleDown}
+              />
+            </div>
+          </div>
+        </Typography.Title>
+      ),
+      children: getCountryList(),
     },
   ];
 
@@ -94,6 +138,15 @@ const NavBarMobile = () => {
             ghost
             expandIcon={() => null}
             items={itemsNest}
+            className={CSS.cs_mob_nav_nested_header}
+          />
+        </div>
+
+        <div className={CSS.cs_top_menu}>
+          <Collapse
+            ghost
+            expandIcon={() => null}
+            items={itemsNestCountry}
             className={CSS.cs_mob_nav_nested_header}
           />
         </div>
