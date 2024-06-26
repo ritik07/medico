@@ -1,0 +1,13 @@
+.cs_fe_card_container {
+  margin: 60px 120px;
+}
+
+@media (max-width: 768px) {
+  .cs_fe_card_container {
+    margin: 10px;
+  }
+
+  .cs_mb_tm_10 {
+    margin-top: 10px;
+  }
+}

@@ -2,8 +2,9 @@
 
 .cs_home_banner_container {
   width: 100%;
-  max-height: 650px;
-  height: 650px;
+  max-height: 680px;
+  height: 680px;
+  position: relative;
 }
 
 .cs_home_banner {
@@ -12,47 +13,51 @@
   object-fit: cover;
 }
 
-.cs_home_banner_web_container :global(.slick-next) {
+.cs_home_banner_web_container :global(.slick-next),
+.cs_home_banner_web_container :global(.slick-prev) {
   display: none !important;
 }
 
-.cs_home_banner_web_next_arrow {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  background-color: $whiteColor;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  top: 46%;
-  right: 25px;
-  position: absolute;
-  padding: 10px;
-  color: $primaryColor;
-  &:hover {
-    color: $whiteColor;
-    background: $primaryColor;
+.cs_home_banner_web_container {
+  position: relative;
+
+  &:hover .cs_home_banner_web_next_arrow {
+    opacity: 1;
+    transform: translateX(25px);  
+  }
+  &:hover .cs_home_banner_web_prev_arrow {
+    opacity: 1;
+    transform: translateX(-25px);  
   }
 }
 
+.cs_home_banner_web_next_arrow,
 .cs_home_banner_web_prev_arrow {
   display: flex !important;
   justify-content: center;
   align-items: center;
   background-color: $whiteColor;
-  height: 50px;
-  width: 50px;
   border-radius: 50%;
-  z-index: 2;
-  top: 46%;
-  left: 25px;
+  top: 45%;
   position: absolute;
-  padding: 10px;
+  padding: 18px 22px;
   color: $primaryColor;
+  opacity: 0;
+  transform: translateX(0px);
+  transition: all 0.3s ease-in, all 0.3s ease-in;
   &:hover {
     color: $whiteColor;
     background: $primaryColor;
   }
+}
+
+.cs_home_banner_web_next_arrow {
+  right: 60px;
+}
+
+.cs_home_banner_web_prev_arrow {
+  z-index: 2;
+  left: 60px;
 }
 
 .cs_cover_img_overlay {
@@ -71,42 +76,32 @@
     height: 100%;
   }
 
-  .cs_home_banner_web_next_arrow {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    background-color: $whiteColor;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    top: 46%;
-    right: 15px;
-    position: absolute;
-    padding: 10px;
-    color: $primaryColor;
-    &:hover {
-      color: $whiteColor;
-      background: $primaryColor;
+  .cs_home_banner_web_container {
+    position: relative;
+  
+    &:hover .cs_home_banner_web_next_arrow {
+      opacity: 1;
+      transform: none;  
+    }
+    &:hover .cs_home_banner_web_prev_arrow {
+      opacity: 1;
+      transform: none;  
     }
   }
-  
+
+  .cs_home_banner_web_next_arrow,
   .cs_home_banner_web_prev_arrow {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    background-color: $whiteColor;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    z-index: 2;
-    top: 46%;
+    padding: 10px 14px;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .cs_home_banner_web_next_arrow {
+    right: 15px;
+  }
+
+  .cs_home_banner_web_prev_arrow {
     left: 15px;
-    position: absolute;
-    padding: 10px;
-    color: $primaryColor;
-    &:hover {
-      color: $whiteColor;
-      background: $primaryColor;
-    }
   }
 }

@@ -6,6 +6,7 @@ import withConfigProvider from "./hoc/with-config-provider-nav-mob";
 import { configNavMob } from "./constants/config";
 import CSS from "./layout.template.module.scss";
 import NavBarDesktop from "../nav-bar/nav-bar-desktop";
+import classNames from "classnames";
 
 const NavBarMobileWithConfig = withConfigProvider(NavBarMobile, configNavMob);
 
@@ -16,11 +17,12 @@ const LayoutTemplate = () => {
         <NavBarMobileWithConfig />
       </div>
 
-      <div className={CSS.desktopView}>
+      <div className={classNames(CSS.desktopView, CSS.cs_sticky_nav)}>
         <NavBarDesktop />
       </div>
-
-      <Outlet />
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
 };
