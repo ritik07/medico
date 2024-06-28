@@ -1,0 +1,82 @@
+@import "/src/styles/colors";
+
+.cs_home_brief_container {
+  padding: 20px;
+}
+
+.cs_txt_sub_title_home_brief {
+  font-weight: 700;
+  font-size: 18px;
+  color: $secondaryColor;
+}
+
+.cs_txt_title_home_brief {
+  font-size: 32px;
+  font-weight: 600;
+  color: $offBlackTxtColor;
+}
+
+.cs_txt_title_home_brief_highlight {
+  color: $primaryColor;
+  &:hover {
+    color: #000;
+  }
+}
+
+.cs_home_brief_para {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cs_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  &:hover img {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
+}
+
+.cs_img_container img {
+  transition: transform 0.5s ease;
+}
+
+.cs_img {
+  max-height: 350px;
+  width: auto;
+  border-radius: 40px 10px 40px 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .cs_txt_sub_title_home_brief {
+    font-size: 16px;
+  }
+
+  .cs_txt_title_home_brief {
+    font-size: 24px;
+  }
+
+  .cs_home_brief_para {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .cs_img {
+    max-height: 200px;
+    width: 100%;
+    border-radius: 20px 5px 20px 5px;
+  }
+
+  .cs_col {
+    margin-top: 25px; /* Add top margin to columns for vertical spacing */
+  }
+
+  .cs_col:first-child {
+    margin-top: 0; /* Remove top margin from the first column */
+  }
+}

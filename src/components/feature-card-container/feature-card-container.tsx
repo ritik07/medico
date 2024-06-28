@@ -13,7 +13,7 @@ import CSS from "./feature-card-container.module.scss";
 const FeatureCardContainer = () => {
   return (
     <div>
-      <Row className={classNames(CSS.cs_fe_card_container)}>
+      <Row>
         <FeatureCard
           sm={12}
           xs={12}
