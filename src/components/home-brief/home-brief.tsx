@@ -4,6 +4,10 @@ import classNames from "classnames";
 import CSS from "./home-brief.module.scss";
 import DecorateLine from "../decorate-line/decorate-line";
 import promo from "./assets/promo.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import StatsInfo from "../stats-info/stats-info";
+import ExploreBtn from "../explore-btn/explore-btn";
 
 const HomeBrief = () => {
   return (
@@ -16,11 +20,11 @@ const HomeBrief = () => {
               CSS.cs_txt_sub_title_home_brief
             )}
           >
-            ABOUT Medico Overseas
+            ABOUT Medico Overseas Consultancy
           </div>
 
           <div className={classNames("cs-bm-12", CSS.cs_txt_title_home_brief)}>
-            Choose Our Best Services to{" "}
+            Choose Our Best Services to {" "}
             <span className={CSS.cs_txt_title_home_brief_highlight}>
               Study Abroad
             </span>
@@ -40,6 +44,11 @@ const HomeBrief = () => {
             a seamless and enriching journey that empowers you to reach your
             full academic and personal potential.
           </div>
+          <Row>
+            <Col xl={5}>
+              <ExploreBtn text="About us" />
+            </Col>
+          </Row>
         </Col>
 
         <Col xs={0} xl={1}></Col>
@@ -48,6 +57,24 @@ const HomeBrief = () => {
           <div className={classNames(CSS.cs_img_container)}>
             <img className={classNames(CSS.cs_img)} src={promo} alt="Promo" />
           </div>
+        </Col>
+      </Row>
+
+      <Row className={classNames("cs-tm-40")} gutter={[20, 20]}>
+        <Col sm={12} xs={12} xl={6}>
+          <StatsInfo delay={3} number={3} title={"Country"} />
+        </Col>
+
+        <Col sm={12} xs={12} xl={6}>
+          <StatsInfo delay={30} number={30} title={"Universities"} />
+        </Col>
+
+        <Col sm={24} xs={24} xl={6}>
+          <StatsInfo delay={7} number={12000} title={"Students Counselled"} />
+        </Col>
+
+        <Col sm={24} xs={24} xl={6}>
+          <StatsInfo delay={7} number={10000} title={"Students Enrolled"} />
         </Col>
       </Row>
     </div>

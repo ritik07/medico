@@ -1,0 +1,28 @@
+@import "/src/styles/colors";
+
+.cs_category_card {
+  background-color: $whiteColor;
+  padding: 40px 60px;
+  border-radius: 8px;
+}
+
+.icon_container {
+  background: $primaryColor;
+  border-radius: 50%;
+  padding: 25px;
+  font-size: 38px;
+    &:hover {
+      background: $secondaryColor;
+    }
+}
+
+.icon {
+  color: $whiteColor;
+}
+
+.cs_category_txt {
+  color: $blackColor;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+}

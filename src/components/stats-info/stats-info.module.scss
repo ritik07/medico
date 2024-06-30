@@ -1,0 +1,18 @@
+@import "/src/styles/colors";
+
+.stats_info_container {
+  background: #fff;
+  padding: 14px;
+}
+
+.stats_info_number {
+  color: $primaryColor;
+  font-size: 54px;
+  font-weight: 800;
+}
+
+.stats_info_title {
+  color: $offBlackTxtColor;
+  font-size: 18px;
+  font-weight: 800;
+}

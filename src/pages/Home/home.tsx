@@ -5,6 +5,9 @@ import { Fade, Zoom } from "react-awesome-reveal";
 import classNames from "classnames";
 import CSS from "./home.module.scss";
 import HomeBrief from "../../components/home-brief/home-brief";
+import BrowseCategory from "../../components/browse-category/browse-category";
+import AllCourses from "../../components/all-courses/all-courses";
+import Consultation from "../../components/consultation/consultation";
 
 const Home = () => {
   return (
@@ -22,9 +25,19 @@ const Home = () => {
       </Fade>
 
       <div className={classNames(CSS.cs_home_component_wrapper)}>
-        <Zoom delay={10} duration={1000}>
+        <Zoom delay={10} duration={1000} triggerOnce>
           <HomeBrief />
         </Zoom>
+
+        <div className="cs-bp-40">
+          <BrowseCategory />
+        </div>
+
+        <div className="cs-bp-40">
+          <AllCourses />
+        </div>
+
+        <Consultation />
       </div>
     </div>
   );

@@ -1,0 +1,62 @@
+@import "/src/styles/colors";
+
+.cs_txt_title_home_brief {
+  font-size: 32px;
+  font-weight: 600;
+  color: $offBlackTxtColor;
+  width: 100%;
+}
+
+.cs_txt_title_home_brief_highlight {
+  width: 100%;
+  transition: all 0.2s ease-in;
+  color: $primaryColor;
+  &:hover {
+    color: $blackColor;
+  }
+}
+
+.cs_home_brief_para {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.info_card_container{
+    width: 100%;
+}
+
+.cs_card_img_container{
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .cs_txt_title_home_brief {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .cs_txt_title_home_brief {
+    font-size: 32px;
+    font-weight: 600;
+    color: $offBlackTxtColor;
+    width: 100%;
+  }
+
+  .cs_txt_title_home_brief_highlight {
+    text-align: center;
+    width: 100%;
+    transition: all 0.2s ease-in;
+    color: $primaryColor;
+    &:hover {
+      color: $blackColor;
+    }
+  }
+
+  .cs_home_brief_para {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

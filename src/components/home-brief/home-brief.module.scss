@@ -11,15 +11,19 @@
 }
 
 .cs_txt_title_home_brief {
+  width: 100%;
   font-size: 32px;
   font-weight: 600;
   color: $offBlackTxtColor;
+  text-align: left;
 }
 
 .cs_txt_title_home_brief_highlight {
+  width: 100%;
+  transition: all 0.2s ease-in;
   color: $primaryColor;
   &:hover {
-    color: #000;
+    color: $blackColor;
   }
 }
 
@@ -50,6 +54,19 @@
   width: auto;
   border-radius: 40px 10px 40px 10px;
   object-fit: cover;
+}
+
+.cs_about_us {
+  background: $primaryColor;
+  border-radius: 6px;
+  padding: 18px 25px;
+  color: $whiteColor;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+  &:hover {
+    background: $blackColor;
+  }
 }
 
 @media (max-width: 768px) {

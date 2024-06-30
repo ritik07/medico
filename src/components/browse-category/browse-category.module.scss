@@ -1,0 +1,16 @@
+@import "/src/styles/colors";
+
+.cs_txt_title_home_brief {
+  font-size: 28px;
+  font-weight: 600;
+  color: $offBlackTxtColor;
+  text-align: center;
+}
+
+.cs_txt_title_home_brief_highlight {
+  transition: all 0.2s ease-in;
+  color: $primaryColor;
+  &:hover {
+    color: $blackColor;
+  }
+}

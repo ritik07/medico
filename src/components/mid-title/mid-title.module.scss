@@ -1,0 +1,11 @@
+@import "/src/styles/colors";
+
+.cs_decor_line {
+  font-size: 12px;
+  line-height: 0.9999;
+  color: $offBlackTxtColor;
+}
+
+.cs_mid_title_container {
+  display: flex;
+}
