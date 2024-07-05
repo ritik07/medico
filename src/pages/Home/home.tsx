@@ -8,6 +8,7 @@ import HomeBrief from "../../components/home-brief/home-brief";
 import BrowseCategory from "../../components/browse-category/browse-category";
 import AllCourses from "../../components/all-courses/all-courses";
 import Consultation from "../../components/consultation/consultation";
+import NewsLetter from "../../components/news-letter/news-letter";
 
 const Home = () => {
   return (
@@ -37,7 +38,12 @@ const Home = () => {
           <AllCourses />
         </div>
 
-        <Consultation />
+        <div className="cs-bp-80">
+          <Consultation />
+        </div>
+        <div className="cs-bp-80">
+          <NewsLetter />
+        </div>
       </div>
     </div>
   );
