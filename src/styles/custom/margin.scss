@@ -2,7 +2,7 @@
 @import "/src/styles/functions";
 
 $margin-value: 2, 4, 5, 6, 8, 10, 12, 13, 14, 15, 17, 16, 18, 20, 22, 24, 25, 26,
-  30, 35, 40, 80, 120;
+  30, 35, 40, 80, 120, 140;
 
 @each $value in $margin-value {
   .cs-bm-#{$value} {

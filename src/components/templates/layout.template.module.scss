@@ -16,6 +16,11 @@
   display: block;
 }
 
+.footer_container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 @media (max-width: 768px) {
   .mobileView {
     display: block;
@@ -23,5 +28,10 @@
 
   .desktopView {
     display: none;
+  }
+
+  .footer_container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

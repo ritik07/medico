@@ -7,12 +7,12 @@ import InfoCard from "../info-card/info-card";
 import mbbs from "./assets/mbbs.jpg";
 import dentist from "./assets/dentist.jpg";
 import medical from "./assets/medical.jpg";
-import { Slide, Zoom } from "react-awesome-reveal";
+import Reveal, { Slide, Zoom } from "react-awesome-reveal";
 
 const AllCourses = () => {
   return (
     <div>
-      <Slide delay={50} duration={1000} triggerOnce direction="left">
+      <Reveal cascade triggerOnce>
         <Row>
           <Col xl={18} xs={24} sm={24}>
             <Row>
@@ -20,7 +20,7 @@ const AllCourses = () => {
                 <div
                   className={classNames("cs-bm-4", CSS.cs_txt_title_home_brief)}
                 >
-                  ALL COURSES OF{" "}
+                  ALL COURSES OF {" "}
                   <span className={CSS.cs_txt_title_home_brief_highlight}>
                     Medico-Overseas Consultancy
                   </span>
@@ -39,9 +39,9 @@ const AllCourses = () => {
             <ExploreBtn text="Learn more" />
           </Col>
         </Row>
-      </Slide>
+      </Reveal>
 
-      <Slide delay={50} duration={1000} triggerOnce direction="right">
+      <Reveal cascade delay={50} duration={1000} triggerOnce>
         <div className="cs-tm-40">
           <Row gutter={[20, 20]}>
             <Col xl={8}>
@@ -57,7 +57,7 @@ const AllCourses = () => {
             </Col>
           </Row>
         </div>
-      </Slide>
+      </Reveal>
     </div>
   );
 };

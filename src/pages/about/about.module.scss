@@ -1,0 +1,107 @@
+@import "/src/styles/colors";
+
+.cs_home_component_wrapper {
+  margin: 60px 120px 0px 120px;
+}
+
+.cs_home_brief_container {
+  padding: 20px;
+}
+
+.cs_txt_sub_title_home_brief {
+  font-weight: 700;
+  font-size: 18px;
+  color: $secondaryColor;
+}
+
+.cs_txt_title_home_brief {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 600;
+  color: $offBlackTxtColor;
+  text-align: left;
+}
+
+.cs_txt_title_home_brief_highlight {
+  width: 100%;
+  transition: all 0.2s ease-in;
+  color: $primaryColor;
+  &:hover {
+    color: $blackColor;
+  }
+}
+
+.cs_home_brief_para {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cs_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  &:hover img {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
+}
+
+.cs_img_container img {
+  transition: transform 0.5s ease;
+}
+
+.cs_img {
+  max-height: 350px;
+  width: auto;
+  border-radius: 40px 10px 40px 10px;
+  object-fit: cover;
+}
+
+.cs_about_us {
+  background: $primaryColor;
+  border-radius: 6px;
+  padding: 18px 25px;
+  color: $whiteColor;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+  &:hover {
+    background: $blackColor;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs_home_component_wrapper {
+    margin: 10px;
+  }
+
+  .cs_txt_sub_title_home_brief {
+    font-size: 16px;
+  }
+
+  .cs_txt_title_home_brief {
+    font-size: 24px;
+  }
+
+  .cs_home_brief_para {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .cs_img {
+    max-height: 200px;
+    width: 100%;
+    border-radius: 20px 5px 20px 5px;
+  }
+
+  .cs_col {
+    margin-top: 25px; /* Add top margin to columns for vertical spacing */
+  }
+
+  .cs_col:first-child {
+    margin-top: 0; /* Remove top margin from the first column */
+  }
+}

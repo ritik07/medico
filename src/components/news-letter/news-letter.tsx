@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 const NewsLetter = () => {
   return (
     <div>
-      <Fade delay={50} duration={1000} triggerOnce direction="up">
+      <Fade cascade triggerOnce direction="up">
         <div className={classNames("cs-center", CSS.cs_txt_title_home_brief)}>
           <div>
             SIGN UP TO OUR {""}

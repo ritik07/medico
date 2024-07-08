@@ -1,0 +1,35 @@
+@import "/src/styles/colors";
+
+.upper_card {
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: #fff;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.detail_card {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.cs_img_container {
+  height: 100%;
+  width: auto;
+}
+
+.cs_img {
+  max-height: 550px;
+  width: 100%;
+}
+
+.cs_title {
+  font-size: 15px;
+  font-weight: 700;
+  color: $offBlackTxtColor;
+}
+
+.cs_title_desc {
+  font-size: 15px;
+  color: $offBlackTxtColor;
+}

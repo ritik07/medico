@@ -17,10 +17,8 @@ const BrowseCategory = () => {
 
         <div className="cs-center">
           <div className={CSS.cs_txt_title_home_brief}>
-            BROWSE OUR COURSE {" "}
-            <span className={CSS.cs_txt_title_home_brief_highlight}>
-              CATEGORIES
-            </span>
+            Browse your future opportunities with {" "}
+            <span className={CSS.cs_txt_title_home_brief_highlight}>MOC</span>
           </div>
         </div>
       </Slide>

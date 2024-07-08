@@ -1,0 +1,48 @@
+@import "/src/styles/colors";
+
+.cs_navbar_logo {
+  max-height: 100%;
+  width: fit-content;
+}
+
+.cs_navbar_logo_container {
+  max-height: 80px;
+  height: 80px;
+}
+
+.cs_nav_logo_title {
+  font-size: 14.4px;
+  text-align: left;
+  line-height: 22.2px;
+  color: $offBlackTxtColor;
+}
+
+.cs_title {
+  color: $blackColor;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22.2px;
+  text-transform: uppercase;
+}
+
+.cs_icon {
+  font-size: 35px;
+  color: $primaryColor;
+  transition: all 0.6s;
+  &:hover {
+    color: $offBlackTxtColor;
+  }
+}
+
+// .cs_title {
+//   font-size: 22px;
+//   font-weight: 700;
+//   color: $primaryColor;
+//   text-transform: uppercase;
+// }
+
+.cs_title_1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: $primaryColor;
+}

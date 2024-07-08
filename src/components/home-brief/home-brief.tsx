@@ -8,8 +8,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import StatsInfo from "../stats-info/stats-info";
 import ExploreBtn from "../explore-btn/explore-btn";
+import { useNavigate } from "react-router-dom";
 
 const HomeBrief = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (value: string) => {
+    navigate(value);
+  };
   return (
     <div className={CSS.cs_home_brief_container}>
       <Row gutter={[16, 16]}>
@@ -24,7 +30,7 @@ const HomeBrief = () => {
           </div>
 
           <div className={classNames("cs-bm-12", CSS.cs_txt_title_home_brief)}>
-            Choose Our Best Services to {" "}
+            Choose Our Best Services to{" "}
             <span className={CSS.cs_txt_title_home_brief_highlight}>
               Study Abroad
             </span>
@@ -46,7 +52,10 @@ const HomeBrief = () => {
           </div>
           <Row>
             <Col xl={5}>
-              <ExploreBtn text="About us" />
+              <ExploreBtn
+                handleClick={() => handleNavigate("about")}
+                text="About us"
+              />
             </Col>
           </Row>
         </Col>

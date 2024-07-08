@@ -5,6 +5,7 @@
 @import "./custom/border-radius.scss";
 @import "./custom/margin.scss";
 @import "./custom/padding.scss";
+@import "./colors";
 
 html,
 body {
@@ -14,15 +15,19 @@ body {
   min-height: 100vh;
 }
 
-.cs-txt-word-break{
+.cs-txt-word-break {
   word-break: break-all;
 }
 
-.cs-font-white{
+.cs-font-white {
   color: #fff !important;
 }
 
-.cs-fs-16{
+.cs-bg-primary {
+  background: $primaryColorLight;
+}
+
+.cs-fs-16 {
   font-size: 16px;
 }
 

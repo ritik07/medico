@@ -1,0 +1,66 @@
+@import "/src/styles/colors";
+
+.image_one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+.image_two {
+  position: relative; /* Positioning context for the overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+.cs_img {
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.766); /* Semi-transparent black overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs_title {
+  color: $secondaryColor;
+}
+
+.text_container {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .cs_img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

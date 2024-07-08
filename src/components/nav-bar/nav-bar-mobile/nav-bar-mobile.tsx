@@ -6,8 +6,15 @@ import CSS from "./nav-bar-mobile.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
+import { useNavigate } from "react-router-dom";
 
 const NavBarMobile = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (value: string) => {
+    navigate(value);
+  };
+
   const [showMenu, setShowMenu] = useState(false);
   const [currentActive, setCurrentActive] = useState("Home");
   const [activeItemArr, setActiveItemArr] = useState<string | string[]>([]);
@@ -15,6 +22,7 @@ const NavBarMobile = () => {
   const [isCountryExpanded, setIsCountryExpanded] = useState<boolean>(false);
 
   const handleActiveMenu = (active: string) => {
+    handleNavigate(active);
     setCurrentActive(active);
     setShowMenu(!showMenu);
     setActiveItemArr([]);
@@ -25,9 +33,9 @@ const NavBarMobile = () => {
       <div>
         <div className={CSS.cs_top_menu}>
           <Typography.Title
-            onClick={() => handleActiveMenu("Medical")}
+            onClick={() => handleActiveMenu("/courses/medical")}
             className={`${CSS.cs_nav_bar_title_container} ${
-              currentActive === "Medical" ? CSS.cs_menu_active_bg : ""
+              currentActive === "/courses/medical" ? CSS.cs_menu_active_bg : ""
             }`}
             level={5}
           >
@@ -111,9 +119,9 @@ const NavBarMobile = () => {
       <div>
         <div className={CSS.cs_top_menu}>
           <Typography.Title
-            onClick={() => handleActiveMenu("Home")}
+            onClick={() => handleActiveMenu("/")}
             className={`${CSS.cs_nav_bar_title_container} ${
-              currentActive === "Home" ? CSS.cs_menu_active_bg : ""
+              currentActive === "/" ? CSS.cs_menu_active_bg : ""
             }`}
             level={5}
           >
@@ -123,13 +131,13 @@ const NavBarMobile = () => {
 
         <div className={CSS.cs_top_menu}>
           <Typography.Title
-            onClick={() => handleActiveMenu("About")}
+            onClick={() => handleActiveMenu("/about")}
             className={`${CSS.cs_nav_bar_title_container} ${
-              currentActive === "About" ? CSS.cs_menu_active_bg : ""
+              currentActive === "/about" ? CSS.cs_menu_active_bg : ""
             }`}
             level={5}
           >
-            About
+            About Us
           </Typography.Title>
         </div>
 
@@ -171,7 +179,11 @@ const NavBarMobile = () => {
       key: "1",
       label: (
         <div
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e) => {
+            e.stopPropagation();
+            setCurrentActive("/");
+            navigate("/");
+          }}
           className={CSS.cs_logo_container_mob}
         >
           <img className={CSS.cs_logo_mob} src={Logo} />
