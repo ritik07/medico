@@ -22,7 +22,7 @@ const NavBar = () => {
             CSS.cs_navbar_menu_title
           )}
         >
-          Georgia
+          Russia
         </div>
       ),
     },
@@ -35,12 +35,12 @@ const NavBar = () => {
             CSS.cs_navbar_menu_title
           )}
         >
-          Russia
+          Kyrgyzstan
         </div>
       ),
     },
     {
-      key: "1",
+      key: "3",
       label: (
         <div
           className={classNames(
@@ -48,7 +48,7 @@ const NavBar = () => {
             CSS.cs_navbar_menu_title
           )}
         >
-          Bangladesh
+          Kazakhstan
         </div>
       ),
     },
@@ -138,6 +138,7 @@ const NavBar = () => {
                         menu={{ items: COURSES_LIST }}
                       >
                         <div
+                          //  onClick={() => handleNavigate("/courses/medical")}
                           className={classNames(
                             "cs-dis-flex",
                             getActiveMenuItem() === "/courses/medical"
@@ -165,7 +166,15 @@ const NavBar = () => {
                         overlayClassName={CSS.cs_navbar_menu_container}
                         menu={{ items: COUNTRY_LIST }}
                       >
-                        <div className={classNames("cs-dis-flex")}>
+                        <div
+                          onClick={() => handleNavigate("/countries")}
+                          className={classNames(
+                            "cs-dis-flex",
+                            getActiveMenuItem() === "/countries"
+                              ? CSS.cs_active
+                              : ""
+                          )}
+                        >
                           Countries
                           <div className={classNames(CSS.dropdown)}>
                             <FontAwesomeIcon icon={faAngleDown} />
@@ -177,7 +186,15 @@ const NavBar = () => {
                 </div>
 
                 <div className={classNames(CSS.cs_nav_title)}>
-                  <span className={classNames("cs-pointer")}>Contact</span>
+                  <span
+                    onClick={() => handleNavigate("/contact")}
+                    className={classNames(
+                      "cs-pointer",
+                      getActiveMenuItem() === "/contact" ? CSS.cs_active : ""
+                    )}
+                  >
+                    Contact
+                  </span>
                 </div>
               </div>
             </Col>

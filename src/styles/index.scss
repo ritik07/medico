@@ -15,6 +15,11 @@ body {
   min-height: 100vh;
 }
 
+.cs-flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .cs-txt-word-break {
   word-break: break-all;
 }

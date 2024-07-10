@@ -95,6 +95,7 @@ const Footer = () => {
                   About Us
                 </div>
                 <div
+                  onClick={() => handleNavigate("/countries")}
                   className={classNames(
                     "cs-pointer cs-center cs-bp-8",
                     CSS.cs_nav_logo_title
@@ -103,6 +104,7 @@ const Footer = () => {
                   Countries
                 </div>
                 <div
+                  onClick={() => handleNavigate("/contact")}
                   className={classNames(
                     "cs-pointer cs-center cs-bp-8",
                     CSS.cs_nav_logo_title

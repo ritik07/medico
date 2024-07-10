@@ -3,6 +3,7 @@ import classNames from "classnames";
 import React from "react";
 import ExploreBtn from "../explore-btn/explore-btn";
 import CSS from "./detail-card.module.scss";
+import { useNavigate } from "react-router-dom";
 
 interface IReasons {
   key: string;
@@ -23,6 +24,11 @@ interface IDetailCardArray {
 }
 
 const DetailCard = ({ medicalCourses }: IDetailCardArray) => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (value: string) => {
+    navigate(value);
+  };
   return (
     <div>
       {medicalCourses.map((item, index) => {
@@ -76,8 +82,11 @@ const DetailCard = ({ medicalCourses }: IDetailCardArray) => {
 
                   <div className={classNames("cs-tm-20")}>
                     <Row>
-                      <Col xl={6}>
-                        <ExploreBtn text="Explore Countries" />
+                      <Col xl={7}>
+                        <ExploreBtn
+                          handleClick={() => handleNavigate("/countries")}
+                          text="Explore Countries"
+                        />
                       </Col>
                     </Row>
                   </div>

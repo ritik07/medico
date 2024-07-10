@@ -1,0 +1,31 @@
+@import "/src/styles/colors";
+
+.cs_home_component_wrapper {
+  margin: 60px 120px 0px 120px;
+}
+
+.cs_icon {
+  font-size: 40px;
+  color: $primaryColor;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 15px;
+  color: $offBlackTxtColor;
+}
+
+@media (max-width: 768px) {
+  .cs_home_component_wrapper {
+    margin: 10px;
+  }
+
+  .cs_margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

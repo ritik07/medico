@@ -20,8 +20,15 @@ import {
   faUsers,
   faFile,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+import OfferCard from "../../components/offer-card/offer-card";
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (value: string) => {
+    navigate(value);
+  };
   const featureCards = [
     {
       color: "#626CE1",
@@ -156,6 +163,15 @@ const About = () => {
             <StatsInfo delay={7} number={10000} title={"Students Enrolled"} />
           </Col>
         </Row>
+
+        <Slide direction="left" cascade triggerOnce>
+          <OfferCard
+            clickAction={() => handleNavigate("/contact")}
+            heading="JOIN MEDICO OVERSEAS TO PURSUE YOUR DREAM CAREER ABROAD"
+            btn_txt="Contact Us"
+            description="Take the leap and join Medico Overseas to pursue your dream career abroad! Click here to explore exciting opportunities and make your aspirations a reality."
+          />
+        </Slide>
       </div>
     </div>
   );

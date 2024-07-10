@@ -7,6 +7,8 @@ import three from "../assets/wb-3.jpg";
 import CSS from "./web-banner.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { Col, Row } from "antd";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const WebBanner = () => {
   var settings = {
@@ -60,6 +62,29 @@ const WebBanner = () => {
                 src={one}
                 alt="Banner 1"
               />
+              <div className={classNames(CSS.cs_banner_text)}>
+                <Slide direction="left" cascade triggerOnce>
+                  <h1>Pursue Your Dream Career</h1>
+                </Slide>
+
+                <Slide direction="right" cascade triggerOnce>
+                  <p className="cs-tm-10">
+                    We at Medico-Overseas helps you get your admission in
+                    prestigeous Universities across the World in various
+                    disciplines.
+                  </p>
+                </Slide>
+
+                <Row className="cs-tm-20">
+                  <Col xl={4} className={classNames("cs-pointer")}>
+                    <Fade delay={1000} direction="up" cascade triggerOnce>
+                      <div className={classNames(CSS.btn_slider)}>
+                        View Courses
+                      </div>
+                    </Fade>
+                  </Col>
+                </Row>
+              </div>
             </div>
           </div>
         </div>
@@ -71,8 +96,29 @@ const WebBanner = () => {
               <img
                 className={classNames(CSS.cs_home_banner)}
                 src={two}
-                alt="Banner 1"
+                alt="Banner 2"
               />
+              <div className={classNames(CSS.cs_banner_text)}>
+                <Slide direction="left" cascade triggerOnce>
+                  <h1>Pursue Your Dream Career</h1>
+                </Slide>
+                <Slide direction="right" cascade triggerOnce>
+                  <p className="cs-tm-10">
+                    We at Medico-Overseas helps you get your admission in
+                    prestigeous Universities across the World in various
+                    disciplines.
+                  </p>
+                </Slide>
+                <Row className="cs-tm-20">
+                  <Col xl={4} className={classNames("cs-pointer")}>
+                    <Fade delay={1000} direction="up" cascade triggerOnce>
+                      <div className={classNames(CSS.btn_slider)}>
+                        View Courses
+                      </div>
+                    </Fade>
+                  </Col>
+                </Row>
+              </div>
             </div>
           </div>
         </div>
@@ -84,8 +130,29 @@ const WebBanner = () => {
               <img
                 className={classNames(CSS.cs_home_banner)}
                 src={three}
-                alt="Banner 1"
+                alt="Banner 3"
               />
+              <div className={classNames(CSS.cs_banner_text)}>
+                <Slide direction="left" cascade triggerOnce>
+                  <h1>Pursue Your Dream Career</h1>
+                </Slide>
+                <Slide direction="right" cascade triggerOnce>
+                  <p className="cs-tm-10">
+                    We at Medico-Overseas helps you get your admission in
+                    prestigeous Universities across the World in various
+                    disciplines.
+                  </p>
+                </Slide>
+                <Row className="cs-tm-20">
+                  <Col xl={4} className={classNames("cs-pointer")}>
+                    <Fade delay={1000} direction="up" cascade triggerOnce>
+                      <div className={classNames(CSS.btn_slider)}>
+                        View Courses
+                      </div>
+                    </Fade>
+                  </Col>
+                </Row>
+              </div>
             </div>
           </div>
         </div>

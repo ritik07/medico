@@ -1,0 +1,17 @@
+@import "/src/styles/colors";
+
+.cs_offer_card_container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.cs_heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.cs_desc {
+  font-size: 16px;
+}
