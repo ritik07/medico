@@ -35,20 +35,20 @@ const NavInfoBar: React.FC = () => {
 
         <Col xl={12} lg={14} md={20}>
           <Row gutter={[10, 10]}>
-            <Col xl={6} lg={7} md={8}>
-              <InfoItem Icon={PhoneOutlined} text="+995-557337825" />
+            <Col xl={12} lg={7} md={8}>
+              <InfoItem Icon={PhoneOutlined} text="8302036392 | 9650256515 | +77 082811469(KZ)" />
             </Col>
 
-            <Col xl={8} lg={10} md={16}>
-              <InfoItem Icon={MailOutlined} text="medicooversease@gmail.com" />
+            <Col xl={12} lg={10} md={16}>
+              <InfoItem Icon={MailOutlined} text="Medicooverseasconsultancy@gmail.com" />
             </Col>
 
-            <Col xl={9} lg={14} md={24}>
+            {/* <Col xl={9} lg={14} md={24}>
               <InfoItem
                 Icon={EnvironmentOutlined}
                 text="26 May 62 Batumi Georgia"
               />
-            </Col>
+            </Col> */}
           </Row>
         </Col>
 

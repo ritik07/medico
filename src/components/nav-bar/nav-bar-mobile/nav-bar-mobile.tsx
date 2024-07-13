@@ -51,13 +51,31 @@ const NavBarMobile = () => {
       <div>
         <div className={CSS.cs_top_menu}>
           <Typography.Title
-            onClick={() => handleActiveMenu("Russia")}
+            onClick={() => handleActiveMenu("/countries/Russia")}
             className={`${CSS.cs_nav_bar_title_container} ${
               currentActive === "Russia" ? CSS.cs_menu_active_bg : ""
             }`}
             level={5}
           >
             Russia
+          </Typography.Title>
+          <Typography.Title
+            onClick={() => handleActiveMenu("/countries/Kyrgyzstan")}
+            className={`${CSS.cs_nav_bar_title_container} ${
+              currentActive === "Russia" ? CSS.cs_menu_active_bg : ""
+            }`}
+            level={5}
+          >
+            Kyrgyzstan
+          </Typography.Title>
+          <Typography.Title
+            onClick={() => handleActiveMenu("countries/kazakhstan")}
+            className={`${CSS.cs_nav_bar_title_container} ${
+              currentActive === "Russia" ? CSS.cs_menu_active_bg : ""
+            }`}
+            level={5}
+          >
+            Kazakhstan
           </Typography.Title>
         </div>
       </div>

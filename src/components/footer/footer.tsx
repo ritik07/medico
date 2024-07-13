@@ -48,7 +48,7 @@ const Footer = () => {
                     <div
                       className={classNames("cs-lm-6", CSS.cs_nav_logo_title)}
                     >
-                      +995-557337825 , +995-557337846
+                      +77 082811469(KZ)
                     </div>
                   </div>
                   <div className="cs-dis-flex cs-bm-10">
@@ -56,7 +56,7 @@ const Footer = () => {
                     <div
                       className={classNames("cs-lm-6", CSS.cs_nav_logo_title)}
                     >
-                      +91-8171872779, +91-9557863743
+                      8302036392 | 9650256515 | +77 082811469(KZ)
                     </div>
                   </div>
                   <div className="cs-dis-flex cs-bm-10">
@@ -64,7 +64,7 @@ const Footer = () => {
                     <div
                       className={classNames("cs-lm-6", CSS.cs_nav_logo_title)}
                     >
-                      medicooversease@gmail.com{" "}
+                      Medicooverseasconsultancy@gmail.com
                     </div>
                   </div>
                 </div>

@@ -20,7 +20,7 @@ const Countries = () => {
     },
     {
       image: kazakhstan,
-      title: "Kazakhstan",
+      title: "kazakhstan",
     },
   ];
   return (

@@ -17,9 +17,11 @@ const NavBar = () => {
       key: "1",
       label: (
         <div
+          onClick={() => handleNavigate("/countries/Russia")}
           className={classNames(
             "cs-dis-flex cs-hrz-center",
-            CSS.cs_navbar_menu_title
+            CSS.cs_navbar_menu_title,
+            getActiveMenuItem() === "/countries/Russia" ? CSS.cs_active : ""
           )}
         >
           Russia
@@ -30,9 +32,11 @@ const NavBar = () => {
       key: "2",
       label: (
         <div
+          onClick={() => handleNavigate("/countries/Kyrgyzstan")}
           className={classNames(
             "cs-dis-flex cs-hrz-center",
-            CSS.cs_navbar_menu_title
+            CSS.cs_navbar_menu_title,
+            getActiveMenuItem() === "/countries/Kyrgyzstan" ? CSS.cs_active : ""
           )}
         >
           Kyrgyzstan
@@ -43,9 +47,11 @@ const NavBar = () => {
       key: "3",
       label: (
         <div
+          onClick={() => handleNavigate("/countries/kazakhstan")}
           className={classNames(
             "cs-dis-flex cs-hrz-center",
-            CSS.cs_navbar_menu_title
+            CSS.cs_navbar_menu_title,
+            getActiveMenuItem() === "/countries/kazakhstan" ? CSS.cs_active : ""
           )}
         >
           Kazakhstan
@@ -76,6 +82,7 @@ const NavBar = () => {
   const handleNavigate = (value: string) => {
     navigate(value);
   };
+  
 
   return (
     <div>

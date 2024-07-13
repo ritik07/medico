@@ -87,7 +87,7 @@ const Contact = () => {
           <Col xl={4}></Col>
         </Row>
 
-        <div className="cs-center cs-tm-80 cs-bm-80">
+        {/* <div className="cs-center cs-tm-80 cs-bm-80">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.2814281847774!2d44.794883416014464!3d41.71513787923551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447316d9ff8aab%3A0x41a229e506b42f9!2s26%20May%20St%2C%20Tbilisi%2C%20Georgia!5e0!3m2!1sen!2s!4v1620158767140!5m2!1sen!2s"
             width="100%"
@@ -96,9 +96,9 @@ const Contact = () => {
             allowFullScreen={false}
             loading="lazy"
           ></iframe>
-        </div>
+        </div> */}
 
-        <Row className="cs-center">
+        <Row className="cs-center cs-tm-80 cs-bm-80">
           <Col xs={2} sm={2} xl={4}></Col>
           <Col xs={18} sm={18} xl={16}>
             <Form
