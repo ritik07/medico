@@ -44,7 +44,7 @@ const Footer = () => {
 
                 <div>
                   <div className="cs-dis-flex cs-bm-10">
-                    <div className={CSS.cs_title_1}>Georgia:</div>
+                    <div className={CSS.cs_title_1}>Contact Us:</div>
                     <div
                       className={classNames("cs-lm-6", CSS.cs_nav_logo_title)}
                     >
@@ -56,7 +56,7 @@ const Footer = () => {
                     <div
                       className={classNames("cs-lm-6", CSS.cs_nav_logo_title)}
                     >
-                      8302036392 | 9650256515 | +77 082811469(KZ)
+                      8302036392 | 9650256515
                     </div>
                   </div>
                   <div className="cs-dis-flex cs-bm-10">
@@ -70,12 +70,23 @@ const Footer = () => {
                 </div>
 
                 <div className="cs-dis-flex cs-tm-40">
-                  <InstagramFilled
-                    className={classNames("cs-rm-6 cs-pointer", CSS.cs_icon)}
-                  />
-                  <FacebookFilled
-                    className={classNames("cs-rm-6 cs-pointer", CSS.cs_icon)}
-                  />
+                  <a
+                    href="https://www.instagram.com/medico.overseas/"
+                    target={"_blank"}
+                  >
+                    <InstagramFilled
+                      className={classNames("cs-rm-6 cs-pointer", CSS.cs_icon)}
+                    />
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61560962888633"
+                    target={"_blank"}
+                  >
+                    <FacebookFilled
+                      className={classNames("cs-rm-6 cs-pointer", CSS.cs_icon)}
+                    />
+                  </a>
                 </div>
               </Col>
 

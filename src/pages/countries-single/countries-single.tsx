@@ -142,6 +142,69 @@ const CountriesSingle: React.FC = () => {
                 );
               })}
             </div>
+
+            <div className={classNames("cs-tm-80")}>
+              <div className={classNames(CSS.title)}>Universities:</div>
+              <hr></hr>
+
+              <div className={classNames("cs-lm-20 cs-tm-40")}>
+                {data.universities &&
+                  data.universities?.map((itm, index) => {
+                    return (
+                      <div className="cs-tm-10">
+                        <Collapse
+                          className={classNames(CSS.items_country_single)}
+                          items={[
+                            {
+                              key: "1",
+                              label: itm.name,
+                              children: (
+                                <div>
+                                  <img
+                                    src={itm.image}
+                                    alt={itm.name}
+                                    className={CSS.side_img}
+                                  />
+                                  <div>
+                                    {itm.description
+                                      .split("\n")
+                                      .map(
+                                        (paragraph: string, index: number) => (
+                                          <p
+                                            key={index}
+                                            style={{ marginBottom: "1em" }}
+                                          >
+                                            {paragraph}
+                                          </p>
+                                        )
+                                      )}
+                                  </div>
+
+                                  <table
+                                    className={CSS.university_overview_table}
+                                  >
+                                    <tbody>
+                                      {Object.entries(itm.overview).map(
+                                        ([key, value]) => (
+                                          <tr key={key}>
+                                            <td>{key}</td>
+                                            {/* @ts-ignore */}
+                                            <td>{value}</td>
+                                          </tr>
+                                        )
+                                      )}
+                                    </tbody>
+                                  </table>
+                                </div>
+                              ),
+                            },
+                          ]}
+                        />
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
           </Col>
           <Col xl={7}>
             <div className={classNames(CSS.img_container)}>

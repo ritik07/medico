@@ -74,12 +74,12 @@ const Contact = () => {
 
             <div className="cs-center">
               <div className={classNames("cs-tm-10 cs-center", CSS.desc)}>
-                Georgia +995-557337825 , +995-557337846
+                Contact Us: +77 082811469(KZ)
               </div>
             </div>
             <div className="cs-center">
               <div className={classNames("cs-tm-10 cs-center", CSS.desc)}>
-                INDIA: +91-8171872779, +91-9557863743
+                INDIA: 8302036392 | 9650256515
               </div>
             </div>
           </Col>

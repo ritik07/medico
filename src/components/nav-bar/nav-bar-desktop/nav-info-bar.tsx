@@ -36,11 +36,17 @@ const NavInfoBar: React.FC = () => {
         <Col xl={12} lg={14} md={20}>
           <Row gutter={[10, 10]}>
             <Col xl={12} lg={7} md={8}>
-              <InfoItem Icon={PhoneOutlined} text="8302036392 | 9650256515 | +77 082811469(KZ)" />
+              <InfoItem
+                Icon={PhoneOutlined}
+                text="8302036392 | 9650256515 | +77 082811469(KZ)"
+              />
             </Col>
 
             <Col xl={12} lg={10} md={16}>
-              <InfoItem Icon={MailOutlined} text="Medicooverseasconsultancy@gmail.com" />
+              <InfoItem
+                Icon={MailOutlined}
+                text="Medicooverseasconsultancy@gmail.com"
+              />
             </Col>
 
             {/* <Col xl={9} lg={14} md={24}>
@@ -57,10 +63,20 @@ const NavInfoBar: React.FC = () => {
         <Col xl={1} lg={3} md={2}>
           <Row gutter={[10, 10]}>
             <Col xl={12} lg={12} md={12}>
-              <InstagramOutlined className="cs-font-white cs-fs-16" />
+              <a
+                href="https://www.instagram.com/medico.overseas/"
+                target={"_blank"}
+              >
+                <InstagramOutlined className="cs-font-white cs-fs-16" />
+              </a>
             </Col>
             <Col xl={12} lg={12} md={12}>
-              <FacebookOutlined className="cs-font-white cs-fs-16" />
+              <a
+                href="https://www.facebook.com/profile.php?id=61560962888633"
+                target={"_blank"}
+              >
+                <FacebookOutlined className="cs-font-white cs-fs-16" />
+              </a>
             </Col>
           </Row>
         </Col>

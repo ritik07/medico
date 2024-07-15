@@ -1,3 +1,9 @@
+import one from "./assets/images/1.png";
+import two from "./assets/images/2.jpg";
+import three from "./assets/images/3.jpg";
+import four from "./assets/images/4.jpg";
+import five from "./assets/images/5.jpg";
+
 // countriesData.ts
 interface CountryData {
   country_title: string;
@@ -7,6 +13,7 @@ interface CountryData {
   questions?: string;
   answer?: string[];
   collapseItems?: any[];
+  universities?: any[];
 }
 
 const countriesData: { [key: string]: CountryData } = {
@@ -99,6 +106,117 @@ const countriesData: { [key: string]: CountryData } = {
           "Documentation Fee (Ministry Decree, EQE Approval) Rs. 65000 Within 5 days After Receiving Admission Letter.",
           "Invitation, Visa, Insurance & Flight Ticket Rs. 60000 Within 5 days After Receiving Admission Letter.",
         ],
+      },
+    ],
+    universities: [
+      {
+        name: "Orenburg State Medical University, Russia",
+        description: `Established in 1944, Orenburg State Medical University (OrSMU) is one of the top-ranked government medical universities located in the city of Orenburg, Russia.\n
+        It offers courses leading to officially recognised higher education degrees such as bachelor’s degrees, master’s degrees, and doctorate degrees in several areas of study.\n
+        The University meets all modern standards and requirements presented to higher medical schools. And that is why, Orenburg State Medical University is the most desired Russian medical university, majorly amongst Indian students who desire to study MBBS in Russia.\n
+        Orenburg State Medical University provides the best-quality educational programs that are designed to offer training to the next generation of medical researchers, physicians, and healthcare professionals.\n
+        Many renowned specialists in the medicine field have graduated from this university. They are working in state and private medical and preventive institutions, taking leading positions in state administrative structures and solving primary issues in the development of modern medicine.\n
+        With a focused and skilled faculty, state-of-the-art infrastructure, library, well-equipped laboratories, museums, and skill lab facilities to offer better hands-on experience to the students, the university has been successful in attracting students globally, including Indian students.\n
+        The medical graduates from OrSMU have been successfully practicing medicine in India, UK, USA, Malaysia, Middle East, and other European countries.\n
+        Orenburg State Medical University strives to provide the best medical education to its students to prepare them to take up the challenges in the future so that when medical students graduate from this university, they have the potential to handle the responsibilities of the medicine field.\n
+        At present, 1200+ Indian students are studying MBBS at Orenburg State Medical University.`,
+        image: one,
+        overview: {
+          "University Recognitions":
+            "ECFMG, WDOMS, FAIMER, NMC (erstwhile MCI), GMC PLAB",
+          "Medium of Teaching": "English",
+          "MBBS Course Duration": "6 years (with internship)",
+          "Eligibility Criteria": "Qualified Class 12 with 50% marks in PCB",
+          "NEET Required": "Yes",
+          "No. of Indian Students (currently enrolled)": "1200+",
+          "Intake Period": "September",
+        },
+      },
+      {
+        name: "Perm State Medical University, Russia",
+        description: `Perm State Medical University was established on September 22, 1916 in the Perm city of Russia.\n  Perm State Medical University is one of oldest and biggest universities of Russia. The university was started as a medical faculty of Perm State University in the year 1916. During the initial years after establishment, this faculty was a part of physics and mathematics faculty and then in 1917, it became an independent department of the medical faculty. \n
+
+        In February 1931, the academy was named as the Perm Medical institute and later in 1994; the name of the institute was changed to Perm State Medical Academy by the orders of State Committee of Higher Education of the Russian Federation. Perm State Medical Academy became a member of the European Association of Medical Schools in Europe in 1997.\n
+        
+        Perm State Medical University holds the largest number of patents for inventions and utility models among all the medical institutions of the state. There are more than 500 employees working in PSMU including named scientists, professors and lecturers. More than 85% of full-time faculty members of PSMU hold a degree from the reputed universities. The scientists working in PSMU actively participate in various experiments and projects to contribute to the medical field by resolving the medical and scientific issues in the fields of cardiology, pediatrics, surgery, neurology, dentistry, epidemiology and other areas.\n
+        
+        At present, the students from more than 21 countries are studying MBBS from Perm State Medical University. The medical students are provided training in various programs of pre-university, undergraduate and postgraduate education. The students studying MBBS in Perm State Medical University also actively participate in various scientific seminars, projects and conferences held other universities. \n`,
+        image: two,
+        overview: {
+          "Year of Establishment": "1916",
+          "Type of University": "Government",
+          duration: "6 years",
+          recognitions: "WDOMS, ECFMG, FAIMER, NMC (erstwhile MCI)",
+          intakePeriod: "September",
+          mediumOfTeaching: "English",
+          neetRequired: "Yes",
+          eligibilityExam: "No",
+          averageTuitionFees: "Rs. 2,90,000",
+          indianStudents: "1200+",
+        },
+      },
+      {
+        name: "Mari State University, Russia",
+        description: `Established in 1972 by the Ministry of Science and Higher Education of the Russian Federation.\n Mari State University (MarSU) is one of the rapidly growing classical universities of the Mari El Republic, Russia, located in the scenic city of Yoshkar-Ola which is the capital of Mari El Republic.\n
+
+        The core aim of the university is to make higher education more accessible to all students around the world, allowing them to develop holistically and prepare them as specialists to work in the field of health care.\n The university curriculum and environment focuses on the developing and implementing innovative diagnostic, treatment, and prevention technologies while nurturing the essential values of compassion and empathy among its students.\n
+        
+        At present, the infrastructure at Mari State University features 7 university buildings and 8 hostel facilities. The university’s library comprises more than 1.1 million books. There are 7 reading rooms with more than 529 seats. The electronic catalogue of the library contains more than 200 thousand units and 17 databases. The university has a huge campus with a total area of 1,28,000 square metres. There are 400 candidates of sciences and associate lecturers and there is a staff of about 100 doctors of sciences and professors.\n`,
+        image: three,
+        overview: {
+          recognitions: "ECFMG, WDOMS, FAIMER, NMC (erstwhile MCI)",
+          mediumOfTeaching: "English",
+          duration: "6 years (with internship)",
+          eligibility: "Qualified Class 12 with 50% marks in PCB",
+          neetRequired: "Yes",
+          indianStudents: "1500+",
+          averageTuitionFees: "Rs. 16,00,000*",
+          averageCostOfLiving: "Rs. 8,000 - Rs. 10,000",
+          averageHostelFees: "Included in Tuition Fees",
+          intakePeriod: "September",
+        },
+      },
+      {
+        name: "Tver State Medical University, Russia",
+        description: `Established in 1936, Tver State Medical University is a higher-education institution located in the medium city of Tver (population range of 250,000-499,999 inhabitants), Tver Oblast. Officially recognized by the Ministry of Health of the Russian Federation, Tver State Medical University is a coeducational Russian higher education institution.\n
+        With commendable world ranking within 5000 universities, Tver State Medical University offers courses and programs leading to officially recognized higher education degrees such as bachelor’s degrees, master’s degrees, and doctorate degrees in several areas of study at affordable fee structures aided by scholarships as well as educational loans.\n
+        Tver State Medical University is known for its scientific achievements, high educational preparation level, and material and technical facilities for research activities and educational processes.\n
+        Today, students from more than a hundred nationalities are studying at Tver State Medical University, which aims to promote vast cultural interaction and mutual exchange between Eastern and Western nations.\n`,
+        image: four,
+        overview: {
+          recognitions: "WDOMS, ECFMG, FAIMER, NMC (erstwhile MCI)",
+          mediumOfTeaching: "English",
+          duration: "6 years",
+          eligibility: "Qualified Class 12 with 50% marks in PCB",
+          neetRequired: "Yes",
+          indianStudents: "1500+",
+          averageTuitionFees: "Rs. 16,00,000*",
+          averageCostOfLiving: "Rs. 8,000 - Rs. 10,000",
+          averageHostelFees: "Included in Tuition Fees",
+          intakePeriod: "September",
+        },
+      },
+      {
+        name: "Pskov State University, Russia",
+        description: `Pskov State University was founded in 2011 by merging five leading educational institutions of the Pskov region. Each of them had its own history and traditions, which we value to this day.\n
+        The priority of Pskov State University is the quality of education, providing training in a total of 190 Bachelor’s, Master’s, Specialist’s, and Postgraduate Degree Programs, alongside secondary vocational education and additional programs.\n
+        Recognized as a flagship of the educational system in Northwest Russia, the university is acknowledged for its valuable impact both in Russia and abroad, evidenced by a large percentage of international students and participation in joint educational programs.\n
+        The university features 22 training and laboratory buildings, 11 student dormitories for 3,500 residents, and a new campus set to open in 2023. The library holds over one million books and periodicals in both traditional and electronic formats.\n
+        Currently, Pskov State University enrolls about 10,000 students, including 1,300 international students from 41 countries, fostering a comfortable environment for research and academic excellence.\n`,
+        image: five,
+        overview: {
+          recognitions: "WDOMS, ECFMG, FAIMER, NMC",
+          mediumOfTeaching: "English",
+          duration: "6 years (with internship)",
+          eligibility:
+            "Minimum 50% aggregate score in PCB subjects; Minimum 17 years of age as of 31st December in the admission year; Qualifying NEET score.",
+          neetRequired: "Mandatory",
+          indianStudents: "1300+",
+          averageTuitionFees: "Rs. 16,00,000*",
+          averageCostOfLiving: "Rs. 8,000 - Rs. 10,000",
+          averageHostelFees: "Included in Tuition Fees",
+          intakePeriod: "September",
+        },
       },
     ],
   },
