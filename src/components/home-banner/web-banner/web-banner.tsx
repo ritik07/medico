@@ -64,14 +64,14 @@ const WebBanner = () => {
               />
               <div className={classNames(CSS.cs_banner_text)}>
                 <Slide direction="left" cascade triggerOnce>
-                  <h1>Pursue Your Dream Career</h1>
+                  <h1>Explore Global Opportunities</h1>
                 </Slide>
 
                 <Slide direction="right" cascade triggerOnce>
                   <p className="cs-tm-10">
-                    We at Medico-Overseas helps you get your admission in
-                    prestigeous Universities across the World in various
-                    disciplines.
+                    Discover the world with Medico-Overseas. We provide pathways
+                    to prestigious universities worldwide, ensuring you achieve
+                    your dream career in medicine.
                   </p>
                 </Slide>
 
@@ -79,7 +79,7 @@ const WebBanner = () => {
                   <Col xl={4} className={classNames("cs-pointer")}>
                     <Fade delay={1000} direction="up" cascade triggerOnce>
                       <div className={classNames(CSS.btn_slider)}>
-                        View Courses
+                        Explore More
                       </div>
                     </Fade>
                   </Col>
@@ -100,20 +100,20 @@ const WebBanner = () => {
               />
               <div className={classNames(CSS.cs_banner_text)}>
                 <Slide direction="left" cascade triggerOnce>
-                  <h1>Pursue Your Dream Career</h1>
+                  <h1>Embark on Your Medical Journey</h1>
                 </Slide>
                 <Slide direction="right" cascade triggerOnce>
                   <p className="cs-tm-10">
-                    We at Medico-Overseas helps you get your admission in
-                    prestigeous Universities across the World in various
-                    disciplines.
+                    With Medico-Overseas, start your journey towards becoming a
+                    doctor at top medical universities across the globe. Your
+                    future begins here.
                   </p>
                 </Slide>
                 <Row className="cs-tm-20">
                   <Col xl={4} className={classNames("cs-pointer")}>
                     <Fade delay={1000} direction="up" cascade triggerOnce>
                       <div className={classNames(CSS.btn_slider)}>
-                        View Courses
+                        Get Started
                       </div>
                     </Fade>
                   </Col>
@@ -134,20 +134,20 @@ const WebBanner = () => {
               />
               <div className={classNames(CSS.cs_banner_text)}>
                 <Slide direction="left" cascade triggerOnce>
-                  <h1>Pursue Your Dream Career</h1>
+                  <h1>Realize Your Medical Ambitions</h1>
                 </Slide>
                 <Slide direction="right" cascade triggerOnce>
                   <p className="cs-tm-10">
-                    We at Medico-Overseas helps you get your admission in
-                    prestigeous Universities across the World in various
-                    disciplines.
+                    Medico-Overseas is your trusted partner in securing
+                    admission to world-class medical institutions. Take the
+                    first step toward your successful medical career.
                   </p>
                 </Slide>
                 <Row className="cs-tm-20">
                   <Col xl={4} className={classNames("cs-pointer")}>
                     <Fade delay={1000} direction="up" cascade triggerOnce>
                       <div className={classNames(CSS.btn_slider)}>
-                        View Courses
+                        Learn More
                       </div>
                     </Fade>
                   </Col>

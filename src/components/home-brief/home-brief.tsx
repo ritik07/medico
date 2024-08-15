@@ -51,7 +51,7 @@ const HomeBrief = () => {
             full academic and personal potential.
           </div>
           <Row>
-            <Col xl={5}>
+            <Col xl={6}>
               <ExploreBtn
                 handleClick={() => handleNavigate("about")}
                 text="About us"

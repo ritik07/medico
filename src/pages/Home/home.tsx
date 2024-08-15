@@ -15,7 +15,7 @@ import {
   faUsers,
   faFile,
 } from "@fortawesome/free-solid-svg-icons";
-import Testimonials from "../../components/testimonials/testimonials";
+import Testimonial from "../../components/testimonials/testimonials";
 
 const Home = () => {
   const featureCards = [
@@ -68,11 +68,11 @@ const Home = () => {
           <AllCourses />
         </div>
 
-        <div className="cs-bp-40">
-          <Testimonials />
+        <div className="cs-bp-40 cs-tp-80">
+          <Testimonial />
         </div>
 
-        <div className="cs-bp-80">
+        <div className="cs-bp-80 cs-tp-80">
           <Consultation />
         </div>
       </div>

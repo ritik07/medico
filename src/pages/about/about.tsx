@@ -22,6 +22,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import OfferCard from "../../components/offer-card/offer-card";
+import Testimonials from "../../components/testimonials/testimonials";
 
 const About = () => {
   const navigate = useNavigate();
@@ -163,6 +164,10 @@ const About = () => {
             <StatsInfo delay={7} number={10000} title={"Students Enrolled"} />
           </Col>
         </Row>
+
+        <div className="cs-bp-40">
+          <Testimonials />
+        </div>
 
         <Slide direction="left" cascade triggerOnce>
           <OfferCard
