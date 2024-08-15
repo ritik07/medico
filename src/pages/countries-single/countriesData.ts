@@ -3,6 +3,16 @@ import two from "./assets/images/2.jpg";
 import three from "./assets/images/3.jpg";
 import four from "./assets/images/4.jpg";
 import five from "./assets/images/5.jpg";
+import six from "./assets/images/6.jpg";
+import seven from "./assets/images/7.jpg";
+import eight from "./assets/images/8.jpg";
+import nine from "./assets/images/9.jpg";
+import ten from "./assets/images/10.jpg";
+import eleven from "./assets/images/11.jpg";
+import twelve from "./assets/images/12.jpg";
+import thert from "./assets/images/13.jpg";
+import fourteen from "./assets/images/14.jpg";
+import fifteen from "./assets/images/fifteen.jpg";
 
 // countriesData.ts
 interface CountryData {
@@ -298,6 +308,84 @@ const countriesData: { [key: string]: CountryData } = {
         ],
       },
     ],
+    universities: [
+      {
+        name: "Osh State University, Medical Faculty, Kyrgyzstan",
+        description: `Osh State University is a public medical university in Osh, Kyrgyzstan, that has been training foreign students since 1992. Over 40,000 students study at this institute, including 3,000 from various countries such as India, Ukraine, China, and others. It is the largest university in the Kyrgyz Republic and is highly ranked by many institutions.\n
+        The university is recognized by MCI, WHO, and is listed in the Avicenna Directory, International Medical Education Directory of FAIMER, and the World Directory of Medical Schools.\n
+        Osh State University offers medical courses in both English and Russian for students from India. Currently, there are over 2,800 students studying medicine in Osh. The university has nearly 250 faculty members and teachers involved in training these students. The university also has tie-ups with several renowned and prestigious hospitals in Kyrgyzstan, providing students with valuable exposure to the latest technology and invaluable experience in the field of medicine.\n`,
+        image: six,
+      },
+      {
+        name: "Kyrgyz State Medical Academy, Kyrgyzstan",
+        description: `Established in 1939, Kyrgyz State Medical Academy (KSMA) is one of the oldest medical universities in Kyrgyzstan. The first batch of the university consisted of about 200 students. The universities of Saint Petersburg, Moscow, Tashkent, and more helped immensely in its establishment in the capital of Kyrgyzstan, Bishkek. KSMA is considered the prime university among all medical colleges in Kyrgyzstan.\n
+  The university has more than 540 faculty members and is recognized by WHO, FAIMER, IMED, and MCI. Students can appear for exams like USMLE, PLAB, and NZREX for further studies in various countries such as the USA, UK, and New Zealand.\n
+  Apart from general medicine, stomatology and pediatrics are also available for students from India. The medical library of KSMA is one of the largest in Kyrgyzstan, comprising more than 400,000 books and also offering digital reading materials in CDs, providing suitable videos and illustrations.\n`,
+        image: seven,
+      },
+      {
+        name: "International School of Medicine, Bishkek, Kyrgyzstan",
+        description: `International School of Medicine (ISM) was established in 2003 and named after B. Osmonov. It is a government university offering MBBS in Kyrgyzstan. The university was founded on April 2, 1993, with the aim of providing the best medical education and training to all medical aspirants of Kyrgyzstan and from different countries, including India. Another objective of the university is to educate medical aspirants at an affordable cost.\n
+        International School of Medicine is affiliated with the Ministry of Health and Science Education of Kyrgyzstan. It is also approved by the National Medical Commission (NMC) and enlisted with the World Directory of Medical Schools (WDOMS), and also recognized and approved by other medical institutions around the world.\n
+        ISM has state-of-the-art infrastructure and modern technologies to educate and train medical students to become excellent doctors and medical professionals. Currently, more than 3,300 students are pursuing MBBS at the university, including Indian students.\n
+        At ISM, the medical faculty conducts scientific work in all areas of medicine, chemistry, biology, and morphology. The facilities include well-equipped laboratories, lecture halls, a library, and clinical facilities that allow students to explore and experience real-life medical situations. The university is affiliated with more than 27 clinics and hospitals for the clinical training of students.\n
+        The university has more than 164 well-trained, highly qualified medical professors and doctors of sciences delivering quality education through lectures, practicals, and clinical training. Among the renowned professors, there are 3 Honored Doctors of the Kyrgyz Republic, 1 Honored Health Worker, 1 Honored Worker of Education, and 15 teachers with the badge "Excellent Health Worker of the Kyrgyz Republic."\n
+        At ISM, students enjoy safe and comfortable accommodation with access to all basic amenities. Students are encouraged to engage in extracurricular activities such as sports, cultural events, and student organizations for their holistic development.\n`,
+        image: eight,
+        overview: {
+          recognitions:
+            "Ministry of Health and Science Education of Kyrgyzstan, WDOMS, ECFMG, FAIMER, NMC",
+          "Medium Of Teaching": "English",
+          duration: "6 years (including internship)",
+          eligibility:
+            "Minimum 50% aggregate score in PCB subjects, Minimum 17 years of age as of 31st December in the admission year, Qualifying NEET score",
+          "Neet Required": "Mandatory",
+          "Indian Students": "3300+",
+          "Average Tuition Fees": "Rs. 16,00,000*",
+          "Average Cost Of Living": "Rs. 8,000 - Rs. 10,000",
+          "Average Hostel Fees": "Included in Tuition Fees",
+          "In take Period": "September",
+        },
+      },
+      {
+        name: "Jalal-Abad State Medical University, Kyrgyzstan",
+        description: `Jalal-Abad State Medical University (JASU), named after B. Osmonov, is a government university offering MBBS in Kyrgyzstan. The university was founded on April 2, 1993, with the aim of providing the best medical education and training to all medical aspirants of Kyrgyzstan and from different countries of the world, including India. Another objective of the university is to educate medical aspirants at an affordable cost.\n
+        Jalal-Abad State Medical University is affiliated with the Ministry of Health and Science Education of Kyrgyzstan. It is also approved by the National Medical Commission (NMC) and enlisted with the World Directory of Medical Schools (WDOMS), and also recognized and approved by other medical institutions worldwide.\n
+        JASU has state-of-the-art infrastructure and modern technologies to educate and train medical students to become excellent doctors and medical professionals to serve humanity. Currently, more than 3,300 students are pursuing MBBS at the university, including Indian students.\n
+        At JASU, the medical faculty conducts scientific work in all areas of medicine, chemistry, biology, and morphology. The facilities include well-equipped laboratories, lecture halls, a library, and clinical facilities that allow students to explore and experience real-life medical situations. The university is affiliated with more than 27 clinics and hospitals for the clinical training of students.\n
+        The university has more than 164 well-trained, highly qualified medical professors and doctors of sciences delivering quality education through lectures, practicals, and clinical training. Among the renowned professors, there are 3 Honored Doctors of the Kyrgyz Republic, 1 Honored Health Worker, 1 Honored Worker of Education, and 15 teachers with the badge "Excellent Health Worker of the Kyrgyz Republic."\n
+        At JASU, students enjoy safe and comfortable accommodation with access to all basic amenities. Students are encouraged to engage in extracurricular activities such as sports, cultural events, and student organizations for their holistic development.\n`,
+        image: nine,
+        overview: {
+          recognitions:
+            "Ministry of Health and Science Education of Kyrgyzstan, WDOMS, ECFMG, FAIMER, NMC",
+          "Medium Of Teaching": "English",
+          duration: "6 years (including internship)",
+          eligibility:
+            "Minimum 50% aggregate score in PCB subjects, Minimum 17 years of age as of 31st December in the admission year, Qualifying NEET score",
+          "Neet Required": "Mandatory",
+          "Indian Students": "3300+",
+          "Average Tuition Fees": "Rs. 16,00,000*",
+          "Average Cost Of Living": "Rs. 8,000 - Rs. 10,000",
+          "Average Hostel Fees": "Included in Tuition Fees",
+          "Intake Period": "September",
+        },
+      },
+      {
+        name: "Asian Medical Institute, KANT",
+        description: `Asian Medical Institute is a university situated in Kyrgyzstan. It is recognized by the Ministry of Education & Ministry of Health. It is also recognized by WHO and listed in the World Directory of Medical Schools. The faculty members are well-versed in English language. Each member holds a degree in Medicine and is either a M.D. or Ph.D. holder. Few members of the faculty are also specialists in their field.
+      
+        Various doctors from Europe, UK & USA visit the campus to impart new technological advances in the field of medicine to our students. Multiple councils of medicine from the countries of India, Pakistan, Nepal, USA, and Great Britain recognize the degree awarded by the Asian Medical Institute.`,
+        image: ten,
+      },
+      {
+        name: "Kyrgyz Russian Slavic University",
+        description: `The Kyrgyz Russian Slavic University is one of the prestigious institutes of higher education in Kyrgyzstan. It provides education in 45 specialties and in three areas. The University was founded in 1993 in the city of Bishkek (formerly Frunze) on the basis of the Treaty “On friendship, cooperation and mutual assistance” between the Kyrgyz Republic and the Russian Federation. In the first year itself, there were about 200 students enrolled.
+      
+        The University is accredited and listed with the Educational Commission for Foreign Medical Graduates (ECFMG) in the USA, Institute of International Medical Education (IIME), International Medical Education Directory (IMED), Medical Council of India (MCI), and World Health Organization (WHO). This implies the degree from Kyrgyz Russian Slavic University is recognized worldwide.`,
+        image: eleven,
+      },
+    ],
   },
   kazakhstan: {
     country_title: "kazakhstan",
@@ -340,6 +428,44 @@ const countriesData: { [key: string]: CountryData } = {
       "Demand draft.",
       "Gap certificate (Affidavit) (if applicable).",
       "Migration certificate (if applicable).",
+    ],
+    universities: [
+      {
+        name: "Caspian Medical University",
+        description: `Caspian University has a distinguished history, named for its ties to Kazakhstan's western region. Established with a focus on oil and gas, geology, and exploration, Caspian University's Graduate School of Medical Education now offers in-demand medical specialties. The university emphasizes professionalism and adherence to significant professional and moral values.
+      
+        With a commitment to high-quality education, Caspian University prioritizes the development of technologies to deliver in-depth medical knowledge. The MBBS degree remains highly sought after in transdisciplinary research and medical treatment, aimed at increasing the number of doctors for patient care and medical research. The university founded the Caspian International School of Medicine, which features cutting-edge lecture halls and training facilities.
+      
+        Caspian University is a multidisciplinary institution providing outstanding education through various programs, including 18 bachelor's degrees, 6 master's degrees, and 2 doctoral specialties. It aims to produce highly skilled medical professionals who meet global society's needs and expectations through the convergence of education, science, and clinical practice.`,
+        image: twelve,
+      },
+      {
+        name: "Kazakh Russian Medical University",
+        description: `Kazakh Russian Medical University is one of the top private colleges in Kazakhstan, established in 1992 by Dr. Mukhtar Aliyevich Aliyev. Initially known as Kazakhstani Medical University, it offers comprehensive medical training through partnerships with renowned medical institutions.
+      
+        Admission is competitive, accepting both local and foreign students per the legislation of Kazakhstan and international treaties. The university adheres to educational benchmarks and continually tests new teaching methods to enhance medical education in the country.
+      
+        With over 200 lecturers, including esteemed doctors and foreign scientists, KRMU provides quality medical education. Students can participate in the academic mobility program, allowing them to study abroad and choose their language of instruction (Kazakh or Russian).
+      
+        Kazakh Russian Medical University maintains strong partnerships with various institutions, including Nagasaki University and Bashkir State Medical University, fostering joint research programs in areas such as genetics and maternal health care.`,
+        image: thert,
+      },
+      {
+        name: "Kazakh National Medical University",
+        description: `Kazakh National Medical University (KazNMU) is one of the top medical universities in Kazakhstan, established in 1930 in Almaty. Recognized as a national university in 2001 due to its excellent academic results, KazNMU is committed to providing high-quality medical education globally.
+      
+        The university is recognized by the Ministry of Education and Science of the Republic of Kazakhstan and aims to be a competitive, innovation-focused institution. It conducts up-to-date scientific research on public health issues and implements findings in practical healthcare.
+      
+        KazNMU offers a wide range of medical courses at the bachelor, master, and doctorate levels, attracting students from various countries for MBBS programs. With a modern infrastructure and advanced medical instruments, KazNMU currently enrolls over 11,000 students and employs more than 1,500 faculty members, including over 500 candidates of science, 200 doctors of science, 130 professors, and 15 laureates of state prizes.`,
+        image: fourteen,
+      },
+      {
+        name: "West Kazakhstan Marat Ospanov Medical University",
+        description: `The history of West Kazakhstan Marat Ospanov Medical University began in 1957, following an order from the USSR to provide qualified medical personnel for Western and North-Western Kazakhstan. On September 1, 1957, Aktobe State Medical Institute (ASMI) was established, focusing on "General Medicine." The first rector, Academician Dairov A.B., played a pivotal role in its development.
+      
+        The opening of the Institute marked a significant milestone in the advancement of medical education and science in Kazakhstan. Initially, faculty members were recruited from leading medical institutions across the USSR, quickly establishing a robust educational process and conducting the first enrollment of students, thus setting the foundation for higher education in Aktobe.`,
+        image: fifteen,
+      },
     ],
   },
   // Add more countries as needed

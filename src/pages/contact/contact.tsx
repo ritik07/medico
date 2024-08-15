@@ -3,7 +3,7 @@ import classNames from "classnames";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import CoverImg from "../../components/cover-img/cover-img";
-import coverImg from "../../pages/about/assets/a.jpg";
+import coverImg from "./assets/2.jpg";
 import CSS from "./contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faMap, faPhone } from "@fortawesome/free-solid-svg-icons";

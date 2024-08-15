@@ -6,6 +6,9 @@ import coverImg from "../about/assets/6.jpg";
 import { Col, Row, Collapse, Divider } from "antd";
 import classNames from "classnames";
 import StatsInfo from "../../components/stats-info/stats-info";
+import russiaImg from "./assets/images/russia.jpg";
+import kyrgyzstanImg from "./assets/images/ky.jpg";
+import kazakhstanImg from "./assets/images/kz.jpg";
 import CSS from "./countries-single.module.scss";
 import sideCover from "./assets/images/side-cover.jpg";
 import { useNavigate } from "react-router-dom";
@@ -25,9 +28,15 @@ const CountriesSingle: React.FC = () => {
   const data = countriesData[page_name];
   const countryKeys = Object.keys(countriesData);
 
+  const getImage = () => {
+    if (page_name === "Russia") return russiaImg;
+    if (page_name === "Kyrgyzstan") return kyrgyzstanImg;
+    if (page_name === "kazakhstan") return kazakhstanImg;
+  };
+
   return (
     <div>
-      <CoverImg text={page_name} image={coverImg} />
+      <CoverImg text={page_name} image={getImage()} />
       <div className={classNames(CSS.cs_home_component_wrapper)}>
         <Row className={classNames("cs-tm-40")} gutter={[20, 20]}>
           <Col sm={12} xs={12} xl={6}>
@@ -183,17 +192,19 @@ const CountriesSingle: React.FC = () => {
                                   <table
                                     className={CSS.university_overview_table}
                                   >
-                                    <tbody>
-                                      {Object.entries(itm.overview).map(
-                                        ([key, value]) => (
-                                          <tr key={key}>
-                                            <td>{key}</td>
-                                            {/* @ts-ignore */}
-                                            <td>{value}</td>
-                                          </tr>
-                                        )
-                                      )}
-                                    </tbody>
+                                    {itm.overview && (
+                                      <tbody>
+                                        {Object.entries(itm.overview).map(
+                                          ([key, value]) => (
+                                            <tr key={key}>
+                                              <td>{key}</td>
+                                              {/* @ts-ignore */}
+                                              <td>{value}</td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    )}
                                   </table>
                                 </div>
                               ),

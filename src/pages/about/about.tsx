@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import React from "react";
 import CoverImg from "../../components/cover-img/cover-img";
-import coverImg from "./assets/a.jpg";
+import coverImg from "./assets/1.jpg";
 import img1 from "./assets/7.jpg";
 import img2 from "./assets/6.jpg";
 import sideImg from "./assets/4.jpg";
